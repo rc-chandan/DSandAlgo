@@ -39,6 +39,16 @@ public class Stack<E> {
         }
     }
 
+    public E peek() {
+        if(isEmpty()) {
+            System.out.println("Stack is empty");
+            return null;
+        }
+        else {
+            return stackValues[top];
+        }
+    }
+
     public boolean isEmpty() {
         return top == -1 ? true : false;
     }
