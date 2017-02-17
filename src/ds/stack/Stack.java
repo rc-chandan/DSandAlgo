@@ -50,11 +50,11 @@ public class Stack<E> {
     }
 
     public boolean isEmpty() {
-        return top == -1 ? true : false;
+        return top == -1;
     }
 
     public boolean isFull() {
-        return top == maxSize - 1 ? true : false;
+        return top == maxSize - 1;
     }
 
     @Override
