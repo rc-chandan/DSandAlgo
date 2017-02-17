@@ -11,6 +11,10 @@ public class Stack<E> {
     private E[] stackValues;
     private int top;
 
+    public Stack() {
+
+    }
+
     public Stack (Class<E> c, int maxSize) {
         this.maxSize = maxSize;
         this.stackValues = (E[]) Array.newInstance(c, maxSize);
